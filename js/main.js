@@ -20,9 +20,29 @@ let displayError= () => {
     $pass.className = "field error";
 }
 
+let displayErrorUser= () => {
+    $user.className = "field error";
+}
+
+let displayErrorPass= () => {
+    $pass.className = "field error";
+}
+
 $signin.addEventListener('click', displayBlock);
 $close.addEventListener('click', displayNone);
 $submit.addEventListener('click', displayError);
+
+$user.addEventListener('focus', displayErrorUser);
+$pass.addEventListener('focus', displayErrorPass);
+
+
+$modal.classList.toggle("show");
+
+let eventLog= () => {
+    console.log(event)
+}
+$signin.addEventListener('click', eventLog);
+$submit.addEventListener('click', eventLog);
 
 
 

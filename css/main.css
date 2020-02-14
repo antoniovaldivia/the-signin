@@ -59,6 +59,10 @@ button.signin:hover {
   background-color: rgba(30,30,30,0.8);
 }
 
+.show {
+display: none;
+}
+
 .getstarted {
   display: block;
   width: 25em;
